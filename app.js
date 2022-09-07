@@ -10,8 +10,8 @@ const DotEnv = require("dotenv").config();
 
 const url = process.env.DATABASEURL || "mongodb://localhost:/blog"
 mongoose.connect(url)
-//mongodb+srv://cchrod:Isdorers@cluster0.htz65rs.mongodb.net/test
-
+//mongodb+srv://cchrod:erod@cluster0.htz65rs.mongodb.net/test
+//mongodb://localhost:27017
 
 app.set("view engine", "ejs")
 
