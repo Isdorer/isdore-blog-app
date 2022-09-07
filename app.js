@@ -1,5 +1,4 @@
 const express = require("express")
-const http = require("http");
 const mongoose = require("mongoose")
 const articleRouter = require("./routes/articles")
 const Article = require ("./models/article")
