@@ -8,7 +8,7 @@ const app = express()
 const DotEnv = require("dotenv").config();
 
 
-const url = process.env.DATABASEURL || "mongodb://localhost:/blog"
+const url = process.env.DATABASEURL || "mongodb://localhost:27017/blog"
 mongoose.connect(url)
 
 
