@@ -8,9 +8,9 @@ const app = express()
 const DotEnv = require("dotenv").config();
 
 
-const url = process.env.DATABASEURL || "mongodb://localhost:/blog"
-mongoose.connect(url)
 
+mongoose.connect("mongodb+srv://cchrod:Isdorerss@cluster0.htz65rs.mongodb.net/test")
+//mongodb+srv://cchrod:Isdorerss@cluster0.htz65rs.mongodb.net/test
 
 
 app.set("view engine", "ejs")
