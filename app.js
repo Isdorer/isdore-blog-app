@@ -7,13 +7,7 @@ const app = express()
 
 mongoose.connect("mongodb://localhost:/blog")
 
-app.use(
-  require("express-session")({
-    secret: "this is the best blog page ever",
-    resave: false,
-    saveUninitialized: false,
-  })
-);
+
 
 
 app.set("view engine", "ejs")
