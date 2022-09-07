@@ -5,8 +5,11 @@ const Article = require ("./models/article")
 const methodOverride = require("method-override")
 const app = express()
 
-mongoose.connect("mongodb://localhost:/blog")
+const DotEnv = require("dotenv").config();
 
+
+const url = process.env.DATABASEURL || "mongodb://localhost:/blog"
+mongoose.connect(url)
 
 
 
